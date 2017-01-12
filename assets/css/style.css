@@ -1,0 +1,587 @@
+.marvel-device {
+  display: inline-block;
+  position: relative;
+  box-sizing: content-box; }
+  .marvel-device .screen {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: block;
+    border-radius: 1px;
+    box-shadow: 0 0 0 3px #111;
+    background: white;
+    z-index: 2; }
+  .marvel-device .top-bar, .marvel-device .bottom-bar {
+    height: 3px;
+    background: black;
+    width: 100%;
+    display: block; }
+  .marvel-device .middle-bar {
+    width: 3px;
+    height: 4px;
+    top: 0px;
+    left: 90px;
+    background: black;
+    position: absolute; }
+  .marvel-device.iphone6plus {
+    width: 414px;
+    height: 736px;
+    padding: 112px 26px;
+    background: #d9dbdc;
+    border-radius: 56px;
+    box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2); }
+    .marvel-device.iphone6plus:before {
+      width: calc(100% - 12px);
+      height: calc(100% - 12px);
+      position: absolute;
+      top: 6px;
+      content: '';
+      left: 6px;
+      border-radius: 50px;
+      background: #f8f8f8;
+      z-index: 1; }
+    .marvel-device.iphone6plus:after {
+      width: calc(100% - 16px);
+      height: calc(100% - 16px);
+      position: absolute;
+      top: 8px;
+      content: '';
+      left: 8px;
+      border-radius: 48px;
+      box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 6px 3px #FFFFFF; }
+    .marvel-device.iphone6plus .home {
+      border-radius: 100%;
+      width: 68px;
+      height: 68px;
+      position: absolute;
+      left: 50%;
+      margin-left: -34px;
+      bottom: 24px;
+      z-index: 3;
+      background: #303233;
+      background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #303233), color-stop(50%, #b5b7b9), color-stop(69%, #f0f2f2), color-stop(100%, #303233));
+      background: -webkit-linear-gradient(-45deg, #303233 0%, #b5b7b9 50%, #f0f2f2 69%, #303233 100%);
+      background: -webkit-linear-gradient(315deg, #303233 0%, #b5b7b9 50%, #f0f2f2 69%, #303233 100%);
+      background: linear-gradient(135deg, #303233 0%, #b5b7b9 50%, #f0f2f2 69%, #303233 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303233', endColorstr='#303233',GradientType=1 ); }
+      .marvel-device.iphone6plus .home:before {
+        background: #f8f8f8;
+        position: absolute;
+        content: '';
+        border-radius: 100%;
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        top: 4px;
+        left: 4px; }
+    .marvel-device.iphone6plus .top-bar {
+      height: 14px;
+      background: #bfbfc0;
+      position: absolute;
+      top: 68px;
+      left: 0; }
+    .marvel-device.iphone6plus .bottom-bar {
+      height: 14px;
+      background: #bfbfc0;
+      position: absolute;
+      bottom: 68px;
+      left: 0; }
+    .marvel-device.iphone6plus .sleep {
+      position: absolute;
+      top: 190px;
+      right: -4px;
+      width: 4px;
+      height: 66px;
+      border-radius: 0px 2px 2px 0px;
+      background: #d9dbdc; }
+    .marvel-device.iphone6plus .volume {
+      position: absolute;
+      left: -4px;
+      top: 188px;
+      z-index: 0;
+      height: 66px;
+      width: 4px;
+      border-radius: 2px 0px 0px 2px;
+      background: #d9dbdc; }
+      .marvel-device.iphone6plus .volume:before {
+        position: absolute;
+        left: 2px;
+        top: -78px;
+        height: 40px;
+        width: 2px;
+        border-radius: 2px 0px 0px 2px;
+        background: inherit;
+        content: '';
+        display: block; }
+      .marvel-device.iphone6plus .volume:after {
+        position: absolute;
+        left: 0px;
+        top: 82px;
+        height: 66px;
+        width: 4px;
+        border-radius: 2px 0px 0px 2px;
+        background: inherit;
+        content: '';
+        display: block; }
+    .marvel-device.iphone6plus .camera {
+      background: #3c3d3d;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: 29px;
+      left: 50%;
+      margin-left: -6px;
+      border-radius: 100%;
+      z-index: 3; }
+    .marvel-device.iphone6plus .sensor {
+      background: #3c3d3d;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 54px;
+      left: 154px;
+      z-index: 3;
+      border-radius: 100%; }
+    .marvel-device.iphone6plus .speaker {
+      background: #292728;
+      width: 70px;
+      height: 6px;
+      position: absolute;
+      top: 59px;
+      left: 50%;
+      margin-left: -35px;
+      border-radius: 6px;
+      z-index: 3; }
+    .marvel-device.iphone6plus.gold {
+      background: #f9e7d3; }
+      .marvel-device.iphone6plus.gold .top-bar, .marvel-device.iphone6plus.gold .bottom-bar {
+        background: white; }
+      .marvel-device.iphone6plus.gold .sleep, .marvel-device.iphone6plus.gold .volume {
+        background: #f9e7d3; }
+      .marvel-device.iphone6plus.gold .home {
+        background: #cebba9;
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #cebba9), color-stop(50%, #f9e7d3), color-stop(100%, #cebba9));
+        background: -webkit-linear-gradient(-45deg, #cebba9 0%, #f9e7d3 50%, #cebba9 100%);
+        background: -webkit-linear-gradient(315deg, #cebba9 0%, #f9e7d3 50%, #cebba9 100%);
+        background: linear-gradient(135deg, #cebba9 0%, #f9e7d3 50%, #cebba9 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cebba9', endColorstr='#cebba9',GradientType=1 ); }
+    .marvel-device.iphone6plus.black {
+      background: #464646;
+      box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.7); }
+      .marvel-device.iphone6plus.black:before {
+        background: #080808; }
+      .marvel-device.iphone6plus.black:after {
+        box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 6px 3px #212121; }
+      .marvel-device.iphone6plus.black .top-bar, .marvel-device.iphone6plus.black .bottom-bar {
+        background: #212121; }
+      .marvel-device.iphone6plus.black .volume, .marvel-device.iphone6plus.black .sleep {
+        background: #464646; }
+      .marvel-device.iphone6plus.black .camera {
+        background: #080808; }
+      .marvel-device.iphone6plus.black .home {
+        background: #080808;
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #080808), color-stop(50%, #464646), color-stop(100%, #080808));
+        background: -webkit-linear-gradient(-45deg, #080808 0%, #464646 50%, #080808 100%);
+        background: -webkit-linear-gradient(315deg, #080808 0%, #464646 50%, #080808 100%);
+        background: linear-gradient(135deg, #080808 0%, #464646 50%, #080808 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#080808', endColorstr='#080808',GradientType=1 ); }
+        .marvel-device.iphone6plus.black .home:before {
+          background: #080808; }
+    .marvel-device.iphone6plus.landscape {
+      padding: 26px 112px;
+      height: 414px;
+      width: 736px; }
+      .marvel-device.iphone6plus.landscape .sleep {
+        top: 100%;
+        border-radius: 0px 0px 2px 2px;
+        right: 190px;
+        height: 4px;
+        width: 66px; }
+      .marvel-device.iphone6plus.landscape .volume {
+        width: 66px;
+        height: 4px;
+        top: -4px;
+        left: calc(100% - 188px - 66px);
+        border-radius: 2px 2px 0px 0px; }
+        .marvel-device.iphone6plus.landscape .volume:before {
+          width: 40px;
+          height: 2px;
+          top: 2px;
+          right: -78px;
+          left: auto;
+          border-radius: 2px 2px 0px 0px; }
+        .marvel-device.iphone6plus.landscape .volume:after {
+          left: -82px;
+          width: 66px;
+          height: 4px;
+          top: 0;
+          border-radius: 2px 2px 0px 0px; }
+      .marvel-device.iphone6plus.landscape .top-bar {
+        width: 14px;
+        height: 100%;
+        left: calc(100% - 68px -  14px);
+        top: 0; }
+      .marvel-device.iphone6plus.landscape .bottom-bar {
+        width: 14px;
+        height: 100%;
+        left: 68px;
+        top: 0; }
+      .marvel-device.iphone6plus.landscape .home {
+        top: 50%;
+        margin-top: -34px;
+        margin-left: 0;
+        left: 24px; }
+      .marvel-device.iphone6plus.landscape .sensor {
+        top: 154px;
+        left: calc(100% - 54px - 16px); }
+      .marvel-device.iphone6plus.landscape .speaker {
+        height: 70px;
+        width: 6px;
+        left: calc(100% - 59px - 6px);
+        top: 50%;
+        margin-left: 0px;
+        margin-top: -35px; }
+      .marvel-device.iphone6plus.landscape .camera {
+        left: calc(100% - 29px);
+        top: 50%;
+        margin-left: 0px;
+        margin-top: -5px; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  width: 414px;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto; }
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  z-index: 3;
+  overflow: scroll; }
+
+header {
+  max-width: 100%;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative; }
+  header .menu {
+    width: 34px;
+    height: 44px;
+    margin-left: 10px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    cursor: pointer; }
+    header .menu span {
+      display: block;
+      width: 100%;
+      height: 6px;
+      border-radius: 12px;
+      background: #0d3d6e;
+      -webkit-transition: background 300ms ease-in-out 400ms;
+      transition: background 300ms ease-in-out 400ms; }
+      header .menu span:before, header .menu span:after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 6px;
+        border-radius: 12px;
+        position: absolute;
+        background: #0d3d6e;
+        -webkit-transition: top 300ms ease-in-out 300ms, bottom 300ms ease-in-out 300ms, -webkit-transform 300ms ease-in-out;
+        transition: top 300ms ease-in-out 300ms, bottom 300ms ease-in-out 300ms, -webkit-transform 300ms ease-in-out;
+        transition: top 300ms ease-in-out 300ms, bottom 300ms ease-in-out 300ms, transform 300ms ease-in-out;
+        transition: top 300ms ease-in-out 300ms, bottom 300ms ease-in-out 300ms, transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out; }
+      header .menu span:before {
+        top: 6px;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg); }
+      header .menu span:after {
+        bottom: 6px; }
+    header .menu:hover span {
+      background: transparent;
+      -webkit-transition: background 300ms ease-in-out;
+      transition: background 300ms ease-in-out; }
+      header .menu:hover span:before {
+        top: 19px;
+        -webkit-transition: top 300ms ease-in-out, -webkit-transform 300ms ease-in-out 300ms;
+        transition: top 300ms ease-in-out, -webkit-transform 300ms ease-in-out 300ms;
+        transition: top 300ms ease-in-out, transform 300ms ease-in-out 300ms;
+        transition: top 300ms ease-in-out, transform 300ms ease-in-out 300ms, -webkit-transform 300ms ease-in-out 300ms;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg); }
+      header .menu:hover span:after {
+        bottom: 19px;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        -webkit-transition: 300ms ease-in-out, -webkit-transform 300ms ease-in-out 300ms;
+        transition: 300ms ease-in-out, -webkit-transform 300ms ease-in-out 300ms;
+        transition: 300ms ease-in-out, transform 300ms ease-in-out 300ms;
+        transition: 300ms ease-in-out, transform 300ms ease-in-out 300ms, -webkit-transform 300ms ease-in-out 300ms; }
+  header .logo {
+    width: 106px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: url(../img/logo.png);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: auto 24px; }
+  header .share-search {
+    height: 100%;
+    width: 88px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    header .share-search .share, header .share-search .search {
+      width: 44px;
+      height: 34px;
+      background: url(../img/icon-sprites.svg);
+        background-size: auto 34px;
+        background-repeat: no-repeat;
+        background-position: 4px 0; }
+    header .share-search .share {
+      background-position: -36px 0; }
+
+#content {
+  max-width: 100%; }
+  #content .post-header-wrap {
+    margin: 2em 10px 0; }
+    #content .post-header-wrap h1 {
+      margin: 0;
+      padding: 0;
+      font-family: "Josefin Sans", "Open Sans", Helvetica, Arial, sans-serif;
+      font-size: 2.4em;
+      line-height: 1.1;
+      letter-spacing: 2px; }
+    #content .post-header-wrap p {
+      font-size: 0.9em;
+      font-family: "Josefin Sans", "Open Sans", Helvetica, Arial, sans-serif;
+      letter-spacing: 1px;
+      color: #999;
+      margin: 1em 0;
+      padding: 0; }
+  #content .bg-content {
+    width: 100%;
+    max-width: 100%;
+    height: 260px;
+    background-image: url(../img/bg-post.png);
+    background-size: contain;
+    background-repeat: no-repeat; }
+  #content .post-content {
+    margin: 0 10px 0;
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+    letter-spacing: 1px; }
+    #content .post-content p {
+      margin: 0 0 1em;
+      line-height: 1.7; }
+    #content .post-content a {
+      text-decoration: none;
+      color: #003366; }
+    #content .post-content span {
+      display: block;
+      width: 95%;
+      margin: 1em auto 0.4em;
+      height: 1px;
+      background-color: #999;
+      margin-bottom: 1em; }
+    #content .post-content .alignnone {
+      width: 100%;
+      height: auto; }
+  #content .share-wrap {
+    margin-bottom: 20px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    height: 40px;
+    list-style: none; }
+    #content .share-wrap li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 20%;
+      height: 40px;
+      margin: 0 20px; }
+      #content .share-wrap li a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #0d3d6e;
+        text-align: center;
+        position: relative; }
+        #content .share-wrap li a .fa {
+          font-size: 1.2em;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          color: #0d3d6e; }
+      #content .share-wrap li p {
+        font-family: "Josefin Sans", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: 1.4em;
+        margin: 0 10px;
+        color: #0d3d6e; }
+
+#discuss {
+  max-width: 95%;
+  margin: 0 auto; }
+  #discuss #form-discuss {
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-top: 10px; }
+    #discuss #form-discuss .discuss-name, #discuss #form-discuss .discuss-email {
+      width: 90%;
+      height: 40px;
+      margin: 0 auto;
+      border-bottom: 1px solid #ddd; }
+      #discuss #form-discuss .discuss-name input, #discuss #form-discuss .discuss-email input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        margin: 0 0 10px;
+        padding: 0;
+        font-family: Georgia, serif;
+        font-size: 1.1em;
+        letter-spacing: 1px; }
+    #discuss #form-discuss .discuss-email {
+      margin-bottom: 10px; }
+    #discuss #form-discuss #dComment {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: Georgia, serif; }
+    #discuss #form-discuss button {
+      width: 140px;
+      height: 30px;
+      background: none;
+      outline: none;
+      margin: 10px 16px;
+      padding: 0;
+      border: 1px solid #003366;
+      float: right;
+      border-radius: 30px;
+      font-family: "Josefin Sans", sans-serif;
+      letter-spacing: 2px;
+      font-size: 1em;
+      color: #003366;
+      cursor: pointer; }
+      #discuss #form-discuss button:hover {
+        background: #003366;
+        color: white; }
+    #discuss #form-discuss:after {
+      display: table;
+      content: '';
+      clear: both; }
+  #discuss .comment-list {
+    width: 100%;
+    max-width: 100%; }
+    #discuss .comment-list .comment-list-wrap {
+      width: 90%;
+      margin: 15px auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 5px 0; }
+      #discuss .comment-list .comment-list-wrap header {
+        width: 100%;
+        height: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 0 10px; }
+        #discuss .comment-list .comment-list-wrap header .avatar {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%; }
+        #discuss .comment-list .comment-list-wrap header .wrap-ident {
+          border-bottom: 1px solid #ddd;
+          width: 80%;
+          margin-left: 10px;
+          font-family: "Josefin Sans", "Open Sans", Helvetica, Arial, sans-serif; }
+          #discuss .comment-list .comment-list-wrap header .wrap-ident h2 {
+            margin: 0;
+            padding: 0; }
+          #discuss .comment-list .comment-list-wrap header .wrap-ident p {
+            margin: 0;
+            padding: 0;
+            font-size: 0.8em;
+            padding: 5px 0;
+            letter-spacing: 1px; }
+      #discuss .comment-list .comment-list-wrap .comment-content {
+        width: 90%;
+        margin: 0 auto;
+        font-family: Georgia, serif;
+        font-size: 1em; }
+        #discuss .comment-list .comment-list-wrap .comment-content p {
+          margin: 0;
+          line-height: 1.5; }
+      #discuss .comment-list .comment-list-wrap .btn-styling {
+        width: 120px;
+        height: 30px;
+        background: none;
+        outline: none;
+        margin: 10px 16px;
+        padding: 0;
+        border: 1px solid #003366;
+        float: right;
+        border-radius: 30px;
+        font-family: "Josefin Sans", sans-serif;
+        letter-spacing: 2px;
+        font-size: 1em;
+        color: #003366;
+        cursor: pointer; }
+        #discuss .comment-list .comment-list-wrap .btn-styling:hover {
+          background: #003366;
+          color: white; }
+      #discuss .comment-list .comment-list-wrap:after {
+        content: '';
+        display: table;
+        clear: both; }

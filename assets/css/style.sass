@@ -1,0 +1,345 @@
+@import 'iphone6plus'
+
+*
+  box-sizing: border-box
+
+body
+  //width: 326px
+  //height: 750px
+  width: 414px
+  height: 100%
+  max-width: 100%
+  margin: 0 auto
+
+.container
+  width: 100%
+  height: 100%
+  padding-top: 10px
+  z-index: 3
+  overflow: scroll
+
+header
+  max-width: 100%
+  height: 44px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  position: relative
+
+  .menu
+    width: 34px
+    height: 44px
+    margin-left: 10px
+    position: relative
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: space-around
+    cursor: pointer
+
+    span
+      display: block
+      width: 100%
+      height: 6px
+      border-radius: 12px
+      background: #0d3d6e
+      transition: background 300ms ease-in-out 400ms
+
+      &:before,
+      &:after
+        display: block
+        content: ''
+        width: 100%
+        height: 6px
+        border-radius: 12px
+        position: absolute
+        background: #0d3d6e
+        transition: top 300ms ease-in-out 300ms, bottom 300ms ease-in-out 300ms, transform 300ms ease-in-out
+
+      &:before
+        top: 6px
+        transform: rotate(0deg)
+
+      &:after
+        bottom: 6px
+
+    &:hover
+      span
+        background: transparent
+        transition: background 300ms ease-in-out
+
+        &:before
+          top: 19px
+          transition: top 300ms ease-in-out, transform 300ms ease-in-out 300ms
+          transform: rotate(45deg)
+
+        &:after
+          bottom: 19px
+          transform: rotate(-45deg)
+          transition: 300ms ease-in-out, transform 300ms ease-in-out 300ms
+
+  .logo
+    width: 106px
+    height: 24px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: url(../img/logo.png)
+      position: 0 0
+      repeat: no-repeat
+      size: auto 24px
+
+  .share-search
+    height: 100%
+    width: 88px
+    display: flex
+    align-items: center
+
+    .share, .search
+      width: 44px
+      height: 34px
+      background: url(../img/icon-sprites.svg)
+        size: auto 34px
+        repeat: no-repeat
+        position: 4px 0
+
+    .share
+      background-position: -36px 0
+
+
+#content
+  max-width: 100%
+
+  .post-header-wrap
+    margin: 2em 10px 0
+
+    h1
+      margin: 0
+      padding: 0
+      font-family: "Josefin Sans", "Open Sans", Helvetica, Arial, sans-serif
+      font-size: 2.4em
+      line-height: 1.1
+      letter-spacing: 2px
+
+    p
+      font-size: 0.9em
+      font-family: "Josefin Sans", "Open Sans", Helvetica, Arial, sans-serif
+      letter-spacing: 1px
+      color: #999
+      margin: 1em 0
+      padding: 0
+
+  .bg-content
+    width: 100%
+    max-width: 100%
+    height: 260px
+    background-image: url(../img/bg-post.png)
+    background-size: contain
+    background-repeat: no-repeat
+
+  .post-content
+    margin: 0 10px 0
+    font-family: Georgia, serif
+    font-size: 1.2em
+    letter-spacing: 1px
+
+    p
+      margin: 0 0 1em
+      line-height: 1.7
+
+    a
+      text-decoration: none
+      color: #003366
+
+    span
+      display: block
+      width: 95%
+      margin: 1em auto 0.4em
+      height: 1px
+      background-color: #999
+      margin-bottom: 1em
+
+    .alignnone
+      width: 100%
+      height: auto
+
+  .share-wrap
+    margin-bottom: 20px
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: space-around
+    width: 100%
+    height: 40px
+    list-style: none
+
+    li
+      display: flex
+      align-items: center
+      width: 20%
+      height: 40px
+      margin: 0 20px
+
+      a
+        display: block
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        border: 1px solid #0d3d6e
+        text-align: center
+        position: relative
+
+        .fa
+          font-size: 1.2em
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          color: #0d3d6e
+
+      p
+        font-family: "Josefin Sans", "Open Sans", Helvetica, Arial, sans-serif
+        font-size: 1.4em
+        margin: 0 10px
+        color: #0d3d6e
+
+#discuss
+  max-width: 95%
+  margin: 0 auto
+
+  #form-discuss
+    display: block
+    width: 100%
+    border: 1px solid #ddd
+    border-radius: 5px
+    margin-top: 10px
+    padding-top: 10px
+
+    .discuss-name, .discuss-email
+      width: 90%
+      height: 40px
+      margin: 0 auto
+      border-bottom: 1px solid #ddd
+
+      input
+        width: 100%
+        height: 100%
+        border: none
+        outline: none
+        margin: 0 0 10px
+        padding: 0
+        font-family: Georgia, serif
+        font-size: 1.1em
+        letter-spacing: 1px
+
+    .discuss-email
+      margin-bottom: 10px
+
+    #dComment
+      display: block
+      width: 90%
+      margin: 0 auto
+      border: 1px solid #ddd
+      border-radius: 5px
+      font-family: Georgia, serif
+
+    button
+      width: 140px
+      height: 30px
+      background: none
+      outline: none
+      margin: 10px 16px
+      padding: 0
+      border: 1px solid #003366
+      float: right
+      border-radius: 30px
+      font-family: "Josefin Sans", sans-serif
+      letter-spacing: 2px
+      font-size: 1em
+      color: #003366
+      cursor: pointer
+
+      &:hover
+        background: #003366
+        color: white
+
+    &:after
+      display: table
+      content: ''
+      clear: both
+
+  .comment-list
+    width: 100%
+    max-width: 100%
+
+    .comment-list-wrap
+      width: 90%
+      margin: 15px auto
+      border: 1px solid #ddd
+      border-radius: 5px
+      padding: 5px 0
+
+      header
+        width: 100%
+        height: 100px
+        display: flex
+        align-items: center
+        padding: 0 10px
+
+        .avatar
+          width: 60px
+          height: 60px
+          border-radius: 50%
+
+        .wrap-ident
+          border-bottom: 1px solid #ddd
+          width: 80%
+          margin-left: 10px
+          font-family: "Josefin Sans", "Open Sans", Helvetica, Arial, sans-serif
+
+          h2
+            margin: 0
+            padding: 0
+
+          p
+            margin: 0
+            padding: 0
+            font-size: 0.8em
+            padding: 5px 0
+            letter-spacing: 1px
+
+      .comment-content
+        width: 90%
+        margin: 0 auto
+        font-family: Georgia, serif
+        font-size: 1em
+
+        p
+          margin: 0
+          line-height: 1.5
+
+      .btn-styling
+        width: 120px
+        height: 30px
+        background: none
+        outline: none
+        margin: 10px 16px
+        padding: 0
+        border: 1px solid #003366
+        float: right
+        border-radius: 30px
+        font-family: "Josefin Sans", sans-serif
+        letter-spacing: 2px
+        font-size: 1em
+        color: #003366
+        cursor: pointer
+
+        &:hover
+          background: #003366
+          color: white
+
+      &:after
+        content: ''
+        display: table
+        clear: both
